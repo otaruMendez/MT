@@ -1,28 +1,18 @@
-# sendict = {'NP':['N','D'],'VP':['V','V.NP']}
 def dickeys(dictionary):
     dictkeys = list(dictionary.keys())
+    dictionlist = []
     for i in dictkeys:
-        if i == 'N':
-            dictkeysN = list(dictionary[i].keys())
-        elif i == 'V':
-            dictkeysV = list(dictionary[i].keys())
-        elif i == 'NP':
-            dictkeysNP = list(dictionary[i].keys())
-        elif i == 'VP':
-            dictkeysVP = list(dictionary[i].keys())
-        elif i == 'D':
-            dictkeysD = list(dictionary[i].keys())
-        elif i == 'A':
-            dictkeysA = list(dictionary[i].keys())
-    return dictkeysN, dictkeysV, dictkeysNP, dictkeysVP, dictkeysD, dictkeysA
+        dictkeysN = list(dictionary[i].keys())
+        dictionlist.append(dictkeysN)
+    return dictionlist
 
 
 def comparator(sentence, dictionary):
+    error = ''
     dictkeys = list(dictionary.keys())
     datacomp = []
     sentencelisted = sentence.split()
-    dictkeysN, dictkeysV, dictkeysNP, dictkeysVP, dictkeysD, dictkeysA = dickeys(dictionary)
-    dictionkeys = [dictkeysN, dictkeysV, dictkeysNP, dictkeysVP, dictkeysD, dictkeysA]
+    dictionkeys = dickeys(dictionary)
     diclen = len(dictionkeys)
 
     for i in sentencelisted:
@@ -59,11 +49,11 @@ def translator(data):
 
 
 if __name__ == "__main__":
-    sentence = 'the girl is here'
+    sentence = 'the girl bought white cloth'
     sentence = sentence.lower()
     diction = {'NP': {1: 'N', 2: 'D'},
                'VP': {1: 'V', 2: 'V.NP'},
-               'V': {'play': 'sere', 'cut': 'ge', 'grow': 'gbi', 'is': 'n', 'bought': 'ra'},
+               'V': {'play': 'sere', 'cut': 'ge', 'plant': 'gbi', 'is': 'n', 'bought': 'ra'},
                'N': {'boy': 'omokunrin', 'tree': 'igi', 'fruit': 'eso', 'cloth': 'aso', 'girl': 'omobinrin'},
                'D': {'the': 'naa', 'a': 'kan', 'an': 'kan'},
                'A': {'white': 'funfun', 'black': 'dudu'}
