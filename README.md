@@ -9,7 +9,7 @@ Google has the best english to yoruba translator out there and doesnt do a very 
 
 ## Installing
 
-- Install python 2.7
+- Install python 3
 
 - clone this repo
 
