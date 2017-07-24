@@ -16,7 +16,7 @@ Google has the best english to yoruba translator out there and doesnt do a very 
 
 ## Contributing
 
-- Please send a discussion to the owners of this repo via email what you wish to add before starting work.
+- Please send a discussion to the owners of this repo what you wish to add before starting work.
 
 - If given the go ahead, fork the project and make a pull request to the repo.
 
