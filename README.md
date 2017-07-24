@@ -4,7 +4,7 @@ English to Yoruba Converter.
 
 ## Motivation
 
-Google has the best translator and doesnt do a very good job.
+Google has the best english to yoruba translator out there and doesnt do a very good job.
 
 
 ## Installing
