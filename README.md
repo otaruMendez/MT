@@ -22,7 +22,7 @@ Google has the best translator and doesnt do a very good job.
 
 ## Milestones
 
-We hope to see this repo progress over time and we would be having milestones until we hit a plateu. Please see our [Milestones](MILESTONES.md) file for details.
+We hope to see this repo progress over time and we would be having milestones until we hit a plateu. Please see our [MILESTONES.md](MILESTONES.md) file for details.
 
 ## Versioning
 
