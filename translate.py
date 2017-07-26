@@ -6,9 +6,8 @@ def dickeys(dictionary):
     dictkeys = list(dictionary.keys())
     dictionlist = []
     for i in dictkeys:
-        if i != "u_id":
-            dictkeysN = list(dictionary[i].keys())
-            dictionlist.append(dictkeysN)
+        dictkeysN = list(dictionary[i].keys())
+        dictionlist.append(dictkeysN)
 
     return dictionlist
 
