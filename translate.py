@@ -1,9 +1,14 @@
+import pymongo
+from pymongo import MongoClient
+
+
 def dickeys(dictionary):
     dictkeys = list(dictionary.keys())
     dictionlist = []
     for i in dictkeys:
         dictkeysN = list(dictionary[i].keys())
         dictionlist.append(dictkeysN)
+
     return dictionlist
 
 
@@ -49,15 +54,10 @@ def translator(data):
 
 
 if __name__ == "__main__":
-    sentence = 'the girl bought white cloth'
+    client = MongoClient('mongodb://mt:general@ds123193.mlab.com:23193/mt')
+    diction = client.mt.diction.find_one({}, {'_id': False})
+    sentence = 'I hate that boy'
     sentence = sentence.lower()
-    diction = {'NP': {1: 'N', 2: 'D'},
-               'VP': {1: 'V', 2: 'V.NP'},
-               'V': {'play': 'sere', 'cut': 'ge', 'plant': 'gbi', 'is': 'n', 'bought': 'ra'},
-               'N': {'boy': 'omokunrin', 'tree': 'igi', 'fruit': 'eso', 'cloth': 'aso', 'girl': 'omobinrin'},
-               'D': {'the': 'naa', 'a': 'kan', 'an': 'kan'},
-               'A': {'white': 'funfun', 'black': 'dudu'}
-               }
     data, error = comparator(sentence, diction)
     if not len(data):
         print(error)

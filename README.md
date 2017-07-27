@@ -11,6 +11,8 @@ Google has the best english to yoruba translator out there and doesnt do a very 
 
 - Install python 3
 
+- Install pymongo3
+
 - clone this repo
 
 - enjoy!
