@@ -10,14 +10,15 @@ Google has the best english to yoruba translator out there and doesnt do a very 
 
 Our end goal is to translate english to yoruba contextually, at the early stages we hope to achive translation based on the SVO (Subject Object Verb) structure of an english sentence to the SOV structure of a yoruba sentence, the approach being used for now is to break down an english sentence into words and identify the Subject,  Verb ad Object. We then find the equivalent words in our diction (an example can be found below) and then create a sentence in yoruba using the SOV structure.
 
-`diction = {'NP': {1: 'N', 2: 'D'},		
- -               'VP': {1: 'V', 2: 'V.NP'},		
- -               'V': {'play': 'sere', 'cut': 'ge', 'plant': 'gbi', 'is': 'n', 'bought': 'ra'},		
- -               'N': {'boy': 'omokunrin', 'tree': 'igi', 'fruit': 'eso', 'cloth': 'aso', 'girl': 'omobinrin'},		
- -               'D': {'the': 'naa', 'a': 'kan', 'an': 'kan'},		
- -               'A': {'white': 'funfun', 'black': 'dudu'}		
- -               } 
- `
+```
+                diction = {'NP': {1: 'N', 2: 'D'},		
+                'VP': {1: 'V', 2: 'V.NP'},		
+                'V': {'play': 'sere', 'cut': 'ge', 'plant': 'gbi', 'is': 'n', 'bought': 'ra'},		
+                'N': {'boy': 'omokunrin', 'tree': 'igi', 'fruit': 'eso', 'cloth': 'aso', 'girl': 'omobinrin'},		
+                'D': {'the': 'naa', 'a': 'kan', 'an': 'kan'},		
+                'A': {'white': 'funfun', 'black': 'dudu'}		
+                } 
+ ```
 Try it here: https://serene-badlands-42335.herokuapp.com/
 
 ## Installing
