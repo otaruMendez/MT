@@ -18,6 +18,12 @@ Our end goal is to translate english to yoruba contextually, at the early stages
                 'D': {'the': 'naa', 'a': 'kan', 'an': 'kan'},		
                 'A': {'white': 'funfun', 'black': 'dudu'}		
                 } 
+                
+                VP: Verb Phrase
+                V: Verb
+                N: Noun
+                D: Determiner
+                A: Adverb
  ```
 Try it here: https://serene-badlands-42335.herokuapp.com/
 
