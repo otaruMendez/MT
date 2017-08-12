@@ -6,9 +6,9 @@ English to Yoruba Translator.
 
 Google has the best english to yoruba translator out there and doesnt do a very good job.
 
-## Project objetive
+## Project objective
 
-Our end goal is to translate english to yoruba contextually, at the early stages we hope to achive translation based on the SVO (Subject Object Verb) structure of an english sentence to the SOV structure of a yoruba sentence, the approach being used for now is to break down an english sentence into words and identify the Subject,  Verb ad Object. We then find the equivalent words in our diction (an example can be found below) and then create a sentence in yoruba using the SOV structure.
+Our end goal is to translate english to yoruba contextually, at the early stages we hope to achieve translation based on the SVO (Subject Object Verb) structure of an english sentence to the SOV structure of a yoruba sentence, the approach being used for now is to break down an english sentence into words and identify the Subject,  Verb ad Object. We then find the equivalent words in our diction (an example can be found below) and then create a sentence in yoruba using the SOV structure.
 
 ```
                 diction = {'NP': {1: 'N', 2: 'D'},		
@@ -45,7 +45,7 @@ Try it here: https://serene-badlands-42335.herokuapp.com/
 
 ## Milestones
 
-We hope to see this repo progress over time and we would be having milestones until we hit a plateu. Please see our [MILESTONES.md](https://github.com/otaruMendez/MT/blob/master/MILESTONES.md) file for details.
+We hope to see this repo progress over time and we would be having milestones until we hit a plateau. Please see our [MILESTONES.md](https://github.com/otaruMendez/MT/blob/master/MILESTONES.md) file for details.
 
 ## Versioning
 
